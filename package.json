@@ -1,0 +1,11 @@
+{"name": "memoum_memory-game",
+"version": "1.0.0",
+"description": "",
+"main": "main.js",
+"scripts": {
+  "sass": "sass  scss/main.scss  css/main.css -w"
+},
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}

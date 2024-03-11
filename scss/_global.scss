@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Recoleta";
+}
+
+body{
+    background-image: url("../assets/hero-bg_mob.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Recoleta;
+    src: url(font/RecoletaRegular.otf);
+    font-weight: 400, 700;
+  }
+  
+  @font-face {
+    font-family: RecoletaSemiBold;
+    src: url(font/RecoletaSemiBold.otf);
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: RecoletaBold;
+    src: url(font/RecoletaSemiBold.otf);
+    font-weight: 700;
+  }

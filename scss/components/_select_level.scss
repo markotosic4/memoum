@@ -1,0 +1,124 @@
+#selectLevel {
+    display: none;
+   
+}
+
+.selectLevel{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* flex-direction: column; */
+   
+
+    &__logo{
+        height: 20vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__article {
+        height: 80vh;
+         background-image: linear-gradient(180deg,$lenear-gradientColor-1 ,$lenear-gradientColor-2);
+        border-radius: 50px 50px 0 0;
+        padding: 37px 26px 22px 26px;
+        text-align: center;
+        align-items: center;
+        font-size: 24px;
+    }
+  
+    &__div {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        background-color: $selectLevelBtnBackground;
+       /*  margin-bottom: 20px; */
+        border-radius: 46px;
+        display: flex;
+        input[type=text] {
+             padding-left: 20px;
+            width: 280px; 
+            font-size: 20px;
+            border-radius: 46px;
+            border: none;
+            
+            
+        }
+        input:-webkit-autofill{
+            -webkit-box-shadow: 0 0 0px 1000px $top5TableContainerBackgroundColor inset;
+        }
+      
+        ::placeholder{
+            color: $black;
+            opacity: .42;
+            font-size: 16px;
+            font-weight: 600;
+            
+        }
+        input[type=radio] {
+            visibility: hidden;
+       }
+    }
+
+    &__div label {
+       font-weight: 600;
+       width: 100%;
+       height: 100%;
+       text-transform: uppercase;
+
+    }
+   
+   
+    input[id=level__submit] {
+        background-color: transparent;
+        font-size: 32px;
+        font-weight: 600;
+        width: 100%;
+        height: 100%;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        border: none;
+
+     }
+     label[id=level__title]{
+        display: flex;
+        text-align: start;
+        padding-left: 17px;
+        /* margin-bottom: 20px; */
+        opacity: 0.5;
+        
+     }
+
+     &__div:last-of-type{
+        background-color: $white;
+        border: 1px solid $black;
+        padding: 0;
+        transform: rotate(3.259deg);
+        margin-bottom: 20px;
+     }
+
+     &__div:first-of-type {
+        display: flex;
+        justify-content: space-between;
+        background-color:transparent;
+        padding: 0;
+     }
+
+     &__decoration {
+        transform: rotate(3.259deg);
+        display: flex;
+        justify-content: space-between;
+     }
+}
+
+#form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#form {
+    
+}

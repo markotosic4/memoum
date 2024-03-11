@@ -1,0 +1,146 @@
+.rank {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+
+    &__logo{
+        height: 20vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__article {
+        height: 80vh;
+        display: flex;
+        flex-direction: column  ;
+        background-image: linear-gradient(180deg, $lenear-gradientColor-1,$lenear-gradientColor-2);
+        border-radius: 50px 50px 0 0;
+        padding: 34px 26px 34px 26px;
+       
+        text-align: center;
+        align-items: center;
+        font-size: 32px;
+        justify-content: space-between;
+        &__header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            &__title {
+                display: flex;
+                font-size: 40px;
+                font-weight: 600;
+                align-items:center;
+                p {
+                    padding-right: 10px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                 img {
+                    
+                    width: 25px;
+                    height: 25px;
+               }
+            }
+           
+           
+        }
+        &__tableContainer {
+            width: 100%;
+            background-color: $top5TableContainerBackgroundColor;
+            padding: 38px 50px;
+            border-radius: 50px;
+        }
+        &__table {
+            font-size: 16px;
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse; 
+            tr{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 2px solid $top5TrBorderColor;
+            }
+            tr:first-of-type{
+                td{
+                    padding: 0;
+                }
+                padding-bottom: 24px;
+                border-bottom: none;
+                font-size: 16px;
+            }
+          
+             td {
+               padding-top: 15px;
+                font-weight: 600;
+             }
+             td:first-child{
+                padding-left: 18px;
+             }
+            
+        }
+
+        &__div:last-of-type{
+            background-color: rgb(142, 31, 31);
+            border: 1px solid $black;
+            transform: rotate(3.259deg);
+         }
+
+         &__levels{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+         }
+
+         button {
+            padding: 10px;
+            background-color: $top5LevelsBtnBackground;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+         }
+    }
+
+    &__decoration{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__last-div {
+        width: 100%;
+        transform: rotate(3.259deg);
+        
+    }
+
+    &__play-again {
+        background-color: $white;
+        border: 1px solid $black;
+        border-radius: 46px;
+    }
+}
+
+#play-again {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input[id=play-again__btn] {
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    height: 100%;
+ }
+
+.closeSelectSection{
+    height: 100%;
+}

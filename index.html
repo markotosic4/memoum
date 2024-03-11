@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoum</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section id="hero">
+        <img src="assets/logo_mob.png" alt="Logo">
+        <button id="hero__btn">Play</button>
+    </section>
+    <section id="selectLevel" class="selectLevel">
+        <div class="selectLevel__logo">
+            <img class="selectLevel__logo__img" src="assets/logo-select-level-mob.png" alt="logo">
+        </div>
+         <article class="selectLevel__article">
+            <form id="form">
+                <div class="selectLevel__div userName">
+                    <input type="text" placeholder="ENTER YOUR NAME:" id="userName">
+                    <img class="closeSelectSection" src="assets/close-mob-select-level.png" alt="close">
+                </div>
+                <label for="level" id="level__title">SELECT LEVEL:</label>
+                <div class="selectLevel__div easy">
+                    <input type="radio" name="level" value="4" id="easy">
+                    <label for="easy">EASY</label>
+                </div>
+                <div class="selectLevel__div medium">
+                    <input type="radio" name="level" value="6" id="medium">
+                    <label for="medium">MEDIUM</label>
+                </div>
+                <div class="selectLevel__div hard">
+                    <input type="radio" name="level" value="8" id="hard">
+                    <label for="hard">HARD</label>
+                </div>
+                <div class="selectLevel__div expert">
+                    <input type="radio" name="level" value="10" id="expert">
+                    <label for="expert">EXPERT</label>
+                </div>
+                <div class="selectBtn">
+                    <div class="selectLevel__decoration">
+                        <img src="assets/decoration1-select-level-mob.png" alt="">
+                        <img src="assets/decoration2-select-level-mob.png" alt="">
+                    </div>
+                    <div class="selectLevel__div">
+                        
+                        <input type="submit" value="NEXT" id="level__submit">
+                    </div>
+                </div>
+               
+                    
+            </form>
+         </article>
+        
+    </section>
+    <section id="main">
+        <header>
+            <img src="assets/logo-main-section-mob.png" alt="logo">
+            <nav id="nav">
+                <p id="nav__user">User1</p>
+                <p id="nav__moves">moves:<span>0</span></p>
+                <p id="nav__timer">00:00</p>
+            </nav>
+        </header>
+       
+        <table id="mainTable"></table>
+        <footer>
+            <button id="back">GO BACK</button>
+            <button id="restart">RESTART</button>
+        </footer>
+    </section>
+
+    <section id="rank" class="rank">
+        <div class="selectLevel__logo">
+            <img class="selectLevel__logo__img" src="assets/logo-select-level-mob.png" alt="logo">
+        </div>
+         <article class="rank__article">
+            
+                <div class="rank__article__header">
+                    <div class="rank__article__header__title">
+                        <p id="">TOP 5</p>
+                    <img src="assets/Star-mob.png" alt="star">
+                    <img src="assets/Star-mob.png" alt="star">
+                    <img src="assets/Star-mob.png" alt="star">
+                    <img src="assets/Star-mob.png" alt="star">
+                    <img src="assets/Star-mob.png" alt="star">
+                    </div>
+                   
+                    <img class="closeSelectSection" src="assets/close-mob-select-level.png" id="closeRank" alt="close">
+                </div>
+                <div class="rank__article__levels">
+                    <button class="easy">EASY</button>
+                    <button class="medium">MEDIUM</button>
+                    <button class="hard">HARD</button>
+                    <button class="expert">EXPERT</button>
+                </div>
+                <div class="rank__article__tableContainer">
+                    <table class="rank__article__table"></table>
+                </div>
+               
+                <div class="rank__last-div">
+                    <div class="rank__decoration">
+                        <img src="assets/decoration1-select-level-mob.png" alt="">
+                        <img src="assets/decoration2-select-level-mob.png" alt="">
+                    </div>
+                    <div class="rank__play-again">
+                        
+                        <input type="submit" value="PLAY AGAIN" id="play-again__btn">
+                    </div>
+                </div>
+               
+                
+                    
+         </article>
+        
+    </section>
+
+     
+    <script type="module" src="main.js"></script>
+</body>
+</html>

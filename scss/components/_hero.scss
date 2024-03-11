@@ -1,0 +1,27 @@
+#hero {
+    padding-top: 97px;
+    padding-bottom: 97px;
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__btn{
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 15px 120px;
+        border-radius: 100px;
+        border: none;
+        border: 3px solid $black;
+        
+       
+        background-color: $heroBtnColor;
+        
+       
+    }
+}
+
+
